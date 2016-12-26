@@ -1,0 +1,115 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 368656 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:390), pid=6728, tid=1632
+#
+# JRE version:  (8.0_45-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.45-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000001fee800):  JavaThread "Unknown thread" [_thread_in_vm, id=1632, stack(0x00000000023f0000,0x00000000024f0000)]
+
+Stack: [0x00000000023f0000,0x00000000024f0000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x32b57a]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000001fee800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=1632, stack(0x00000000023f0000,0x00000000024f0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x000000013f5a0000 - 0x000000013f5d7000 	D:\tool\java\JDK1.8\bin\java.exe
+0x0000000076cf0000 - 0x0000000076e99000 	C:\windows\SYSTEM32\ntdll.dll
+0x0000000076ad0000 - 0x0000000076bef000 	C:\windows\system32\kernel32.dll
+0x000007fefcac0000 - 0x000007fefcb2b000 	C:\windows\system32\KERNELBASE.dll
+0x000007fefee00000 - 0x000007fefeedb000 	C:\windows\system32\ADVAPI32.dll
+0x000007fefd660000 - 0x000007fefd6ff000 	C:\windows\system32\msvcrt.dll
+0x000007fefe560000 - 0x000007fefe57f000 	C:\windows\SYSTEM32\sechost.dll
+0x000007fefe6f0000 - 0x000007fefe81d000 	C:\windows\system32\RPCRT4.dll
+0x0000000076bf0000 - 0x0000000076cea000 	C:\windows\system32\USER32.dll
+0x000007fefed90000 - 0x000007fefedf7000 	C:\windows\system32\GDI32.dll
+0x000007fefd370000 - 0x000007fefd37e000 	C:\windows\system32\LPK.dll
+0x000007fefeee0000 - 0x000007fefefa9000 	C:\windows\system32\USP10.dll
+0x000007fefb4b0000 - 0x000007fefb6a4000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefcf00000 - 0x000007fefcf71000 	C:\windows\system32\SHLWAPI.dll
+0x000007fefe660000 - 0x000007fefe68e000 	C:\windows\system32\IMM32.DLL
+0x000007fefec80000 - 0x000007fefed89000 	C:\windows\system32\MSCTF.dll
+0x000000006ab70000 - 0x000000006ac42000 	D:\tool\java\JDK1.8\bin\msvcr100.dll
+0x0000000060300000 - 0x0000000060b83000 	D:\tool\java\JDK1.8\bin\server\jvm.dll
+0x000007fef8630000 - 0x000007fef8639000 	C:\windows\system32\WSOCK32.dll
+0x000007fefefb0000 - 0x000007fefeffd000 	C:\windows\system32\WS2_32.dll
+0x000007fefd720000 - 0x000007fefd728000 	C:\windows\system32\NSI.dll
+0x000007fefa9a0000 - 0x000007fefa9db000 	C:\windows\system32\WINMM.dll
+0x000007fefbb40000 - 0x000007fefbb4c000 	C:\windows\system32\VERSION.dll
+0x0000000076eb0000 - 0x0000000076eb7000 	C:\windows\system32\PSAPI.DLL
+0x0000000073030000 - 0x000000007303f000 	D:\tool\java\JDK1.8\bin\verify.dll
+0x0000000072900000 - 0x0000000072929000 	D:\tool\java\JDK1.8\bin\java.dll
+0x0000000072ef0000 - 0x0000000072f06000 	D:\tool\java\JDK1.8\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Djava.awt.headless=true -Dfile.encoding=GBK -Duser.country=CN -Duser.language=zh -Duser.variant 
+java_command: com.android.multidex.ClassReferenceListBuilder C:\Users\Forrest_Gump\Desktop\ktfott\SCHOOL\KT\app\build\intermediates\multi-dex\debug\componentClasses.jar C:\Users\Forrest_Gump\Desktop\ktfott\SCHOOL\KT\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar
+java_class_path (initial): D:\android-sdk-windows\build-tools\23.0.2\lib\dx.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\tool\java\jdk1.7.0_45_64
+PATH=D:\tool\java\JDK1.8\bin;D:\tool\android\sdk\platform-tools;%JAVA_HOME%\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;D:\tool\android\sdk\platform-tools;D:\tool\java\jdk1.7.0_45_64\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live
+USERNAME=Forrest_Gump
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.18229)
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 61 stepping 4, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8306228k(1476944k free), swap 8304364k(5184k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.45-b02) for windows-amd64 JRE (1.8.0_45-b15), built on Apr 30 2015 12:40:44 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Dec 10 18:42:23 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

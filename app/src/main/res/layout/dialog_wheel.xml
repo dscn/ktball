@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/shape_dialog_bg"
+        android:layout_width="270dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center|top"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="选择日期"
+                android:id="@+id/selectDialog_txv_title" />
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_dialog_bg"
+                android:layout_width="270dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal">
+
+                <com.newer.kt.Refactor.view.wheelview.WheelView
+                    android:id="@+id/year"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+                <com.newer.kt.Refactor.view.wheelview.WheelView
+                    android:id="@+id/month"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+                <com.newer.kt.Refactor.view.wheelview.WheelView
+                    android:id="@+id/day"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/actionBar"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:background="@drawable/selector_login_button"
+                android:textSize="16sp"
+                android:textColor="@color/footTextColorSelect"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:id="@+id/selectDialog_txv_cacel"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/dialog_viw_line"
+                android:background="@color/actionBar"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:background="@drawable/selector_login_button"
+                android:textSize="16sp"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="确定"
+                android:id="@+id/selectDialog_txv_confirm"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_bottom_button_main_guide">40dp</dimen>
+    <dimen name="rankinglist_list_title_h">40dp</dimen>
+    <dimen name="rankinglist_list_text_size">12sp</dimen>
+
+    <dimen name="margin_widget_default">6dp</dimen>
+
+    <dimen name="padding_screen_default">16dp</dimen>
+    <dimen name="padding_layout_default">12dp</dimen>
+    <dimen name="padding_widget_default">6dp</dimen>
+    <!-- 打分界面-->
+    <dimen name="layout_xingxing">30dp</dimen>
+    <dimen name="layout_xingxing_large">40dp</dimen>
+    <dimen name="layout_xingxing_margin">5dp</dimen>
+    <dimen name="layout_xingxing_margin_r">21dp</dimen>
+
+    <dimen name="activity_kt_text_size">12sp</dimen>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_select_class_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#464646"
+        android:orientation="horizontal"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/layout_select_class_add_class"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:minLines="2"
+                android:textSize="18sp"
+                android:background="@drawable/bg_special_disease_circle_yellow"
+                android:text="新增班级"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/layout_select_class_add_student"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:padding="8dp"
+                android:minLines="2"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/bg_special_disease_circle_yellow"
+                android:text="新增学生"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ExpandableListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout_select_class_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_select_class_bottom"
+        android:layout_weight="1" />
+
+</RelativeLayout>

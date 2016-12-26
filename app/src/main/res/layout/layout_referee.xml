@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/judge_background"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="5dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:id="@+id/layout_schoolinfo_updata"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/layout_schoolinfo_updata_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_updata"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:visibility="gone"
+                android:id="@+id/layout_schoolinfo_diandiandian"
+                android:background="@drawable/icon_diandiandian" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/layout_title_tv"
+            style="@style/toolbar_title_text"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:id="@+id/layout_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_setting" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="80dp">
+
+        <LinearLayout
+            android:id="@+id/layout_rederee_Judgment"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/caipanxuanze"
+                android:id="@+id/ImageView222"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="人工执裁"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:id="@+id/textView307"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_rederee_doUploading"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/shipingshangchuan"
+                android:id="@+id/ImageView2"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="视频上传"
+                android:textColor="@android:color/white"
+                android:textSize="16dp"
+                android:id="@+id/textView37"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

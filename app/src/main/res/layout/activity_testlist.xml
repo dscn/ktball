@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/recyclerview_top"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/text_black">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="doBack"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@mipmap/nomal_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评测"
+            android:textColor="@color/gold"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/image_home"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:onClick="doHome"
+            android:src="@mipmap/home" />
+
+    </RelativeLayout>
+    <ExpandableListView
+        android:id="@+id/layout_select_class_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_select_class_bottom"
+        android:layout_below="@id/recyclerview_top"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:groupIndicator="@null" />
+</LinearLayout>

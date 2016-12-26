@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_xianyuandanji" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/login_user" />
+
+        <EditText
+            android:id="@+id/editText_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/no_border"
+            android:gravity="center"
+            android:hint="请输入账号"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/train_start_text_color" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dcdcdc"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/login_mima" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/imageView8"
+            android:layout_toEndOf="@+id/imageView13"
+            android:layout_toRightOf="@+id/imageView13"
+            android:layout_weight="1"
+            android:background="@drawable/no_border"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/train_start_text_color" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dcdcdc"></View>
+
+    <Button
+        android:id="@+id/imageView_login_button"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/imageView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@color/gold"
+        android:text="登 录"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+
+</LinearLayout>

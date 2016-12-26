@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Refactor.ui.Avtivity.KtActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView49"
+        android:src="@drawable/kt"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="doBack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/retu" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout7">
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/game_avatar1_imageView"
+            android:onClick="doScan"
+            android:src="@drawable/game_avatar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:onClick="doScan"
+            android:src="@drawable/game_avatar"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/game_avatar2_imageView"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView81"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:onClick="doScan"
+            android:src="@drawable/game_avatar"
+            android:id="@+id/game_avatar3_imageView"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView81"
+            android:layout_toEndOf="@+id/imageView81" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView82"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView81"
+            android:layout_toEndOf="@+id/imageView81" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:onClick="doScan"
+            android:src="@drawable/game_avatar"
+            android:id="@+id/game_avatar6_imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView83"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/game_avatar5_imageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:onClick="doScan"
+            android:src="@drawable/game_avatar"
+            android:layout_toLeftOf="@+id/imageView83"
+            android:layout_toStartOf="@+id/imageView83" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView84"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageView83"
+            android:layout_toStartOf="@+id/imageView83" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/game_avatar4_imageView"
+            android:layout_alignParentTop="true"
+            android:onClick="doScan"
+            android:src="@drawable/game_avatar"
+            android:layout_toLeftOf="@+id/imageView84"
+            android:layout_toStartOf="@+id/imageView84" />
+
+        <com.newer.kt.myClass.MyCircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imageView85"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageView84"
+            android:layout_toStartOf="@+id/imageView84" />
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="New Text"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView41"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/game_avatar2_imageView"
+            android:layout_alignStart="@+id/game_avatar2_imageView" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="New Text"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView40"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="New Text"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView42"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/game_avatar3_imageView"
+            android:layout_alignStart="@+id/game_avatar3_imageView" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="New Text"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView43"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/game_avatar4_imageView"
+            android:layout_alignStart="@+id/game_avatar4_imageView" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="New Text"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView44"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/game_avatar5_imageView"
+            android:layout_alignStart="@+id/game_avatar5_imageView" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:text="New Text"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:id="@+id/textView45"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/game_avatar6_imageView"
+            android:layout_alignStart="@+id/game_avatar6_imageView" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

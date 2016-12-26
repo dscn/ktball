@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="frame_margin_widget_default">6dp</dimen>
+    <dimen name="frame_margin_layout_default">12dp</dimen>
+    <dimen name="frame_margin_screen_default">16dp</dimen>
+
+    <dimen name="frame_padding_layout_default">12dp</dimen>
+    <dimen name="frame_padding_widget_default">6dp</dimen>
+    <dimen name="frame_padding_screen_default">16dp</dimen>
+</resources>

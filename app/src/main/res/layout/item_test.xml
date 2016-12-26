@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:src="@drawable/top_1" />
+
+            <TextView
+                android:id="@+id/tv_cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/text_black"
+                android:textSize="13dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:padding="0.1dp"
+            android:background="@drawable/yuan_1"
+            android:src="@drawable/result_btnkt" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="123"
+            android:textColor="@color/text_black"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/image_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/nan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/tv_gradle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="199"
+                android:textColor="@color/text_grey"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_dongzuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="199"
+                android:textColor="@color/text_grey"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/tv_all_cont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="199"
+                android:textColor="@color/text_black"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@id/image_bg"
+        android:background="@color/nomal_bg"></View>
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+include ':app', ':Frame', ':MyDaoGenerator', ':MPChartLib', ':YoukuPlayerOpenSDK'

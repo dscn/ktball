@@ -1,0 +1,95 @@
+<resources>
+
+    <style name="MyCheck_Box" parent="@android:style/Widget.CompoundButton.CheckBox">
+
+        <item name="android:button">@drawable/check_box_selector</item>
+
+        <item name="android:paddingLeft">5.0dip</item>
+
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="cborder_width" format="dimension" />
+        <attr name="cborder_color" format="color" />
+    </declare-styleable>
+
+    <style name="Widget"></style>
+
+    <style name="checkbox_style">
+        <item name="android:background">@null</item>
+        <item name="android:button" >@drawable/msg_tab_widget_sharp</item>
+        <item name="android:textColor">#ff888888</item>
+        <item name="android:textSize" >16sp</item>
+        <item name="android:gravity" >center</item>
+    </style>
+
+    <style name="transparentFrameWindowStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@style/main_menu_animstyle</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="jc_style_dialog_progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/jc_dialog_progress_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/jc_popup_toast_anim</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="jc_popup_toast_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="jc_vertical_progressBar">
+        <item name="android:maxWidth">12.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/jc_volume_progress_bg</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">1.0dip</item>
+    </style>
+
+
+    <!-- 打分界面样式-->
+    <style name="layout_grade_rela">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="layout_grade_rela_tv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">21dp</item>
+    </style>
+
+    <style name="layout_grade_rela_ll">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">21dp</item>
+    </style>
+
+    <style name="dateStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

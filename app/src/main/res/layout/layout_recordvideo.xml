@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/go_imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_go" />
+
+    <TextView
+        android:id="@+id/layout_recordvideo_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        android:textColor="@color/blue"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        android:text="放弃录制" />
+
+    <TextView
+        android:id="@+id/layout_recordvideo_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textColor="@color/red"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:visibility="gone"
+        android:text="录制时长：00：00" />
+
+    <TextView
+        android:id="@+id/layout_recordvideo_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/blue"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:text="结束录制" />
+
+</RelativeLayout>

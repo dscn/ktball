@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="PersonalCreditReportLibrary">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../kuaicha/libs/PersonalCreditReportLibrary.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

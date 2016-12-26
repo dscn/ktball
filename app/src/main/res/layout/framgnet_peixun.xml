@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nomal_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/text_black">
+
+        <ImageView
+            android:id="@+id/image_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:src="@mipmap/load" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="大课间"
+            android:textColor="@color/gold"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_peixun_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="大课间"
+            android:textColor="@drawable/selector_main_bottom_1_tv"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="15dp"
+            android:background="@color/text_grey">
+
+        </View>
+
+        <TextView
+            android:id="@+id/tv_peixun_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="技能教学"
+            android:textColor="@drawable/selector_main_bottom_1_tv"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="15dp"
+            android:background="@color/text_grey">
+
+        </View>
+
+        <TextView
+            android:id="@+id/tv_peixun_tab3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="足球课"
+            android:textColor="@drawable/selector_main_bottom_1_tv"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="15dp"
+            android:background="@color/text_grey">
+
+        </View>
+
+        <TextView
+            android:id="@+id/tv_peixun_tab4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="测试"
+            android:textColor="@drawable/selector_main_bottom_1_tv"
+            android:textSize="13dp" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

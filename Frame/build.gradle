@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 2
+        versionName "1.0.1"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:design:23.1.0'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    compile 'com.android.support:cardview-v7:23.1.0'
+    compile 'com.umeng.analytics:analytics:5.6.4'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile files('libs/butterknife-7.0.1.jar')
+    compile 'de.greenrobot:greendao-generator:2.1.0'
+    compile 'de.greenrobot:greendao:2.1.0'
+    compile 'com.google.zxing:core:3.2.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.yolanda.nohttp:nohttp:1.0.3'
+    compile project(':YoukuPlayerOpenSDK')
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.6.2'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.6.2'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.6.2'
+    compile 'tv.danmaku.ijk.media:ijkplayer-arm64:0.6.2'
+    compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.6.2'
+    compile 'tv.danmaku.ijk.media:ijkplayer-x86_64:0.6.2'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/httpmime-4.1.2.jar')
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //gif
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+    compile 'com.bugtags.library:bugtags-lib:latest.integration'
+    compile files('libs/IndoorscapeAlbumPlugin.jar')
+}

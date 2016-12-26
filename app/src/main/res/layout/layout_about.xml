@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#484848"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:text="        由前女足国脚leo创新研发的一种线下与线上结合的小型足球比赛实现方式，选手通过App报名，在气场里进行为时3分钟的1vs1、2vs2比赛。进球计2分，穿裆计1分，通常情况下，得分多者获胜，但是，如果运动员带球穿档过人并且在球碰到场地之前控制住球，则直接获胜（也就是KT）;比赛结束之后您可以通过app或登录KT足球官网查看自己的比赛视频。" />
+
+</LinearLayout>

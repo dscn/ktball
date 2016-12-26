@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_train">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/toolbar_bg_color_3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/layout_trainover_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/icon_trainover" />
+
+            <TextView
+                android:id="@+id/layout_trainover_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_trainover_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/layout_trainover_tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_trainover_tv_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="来个自己表现打个分吧！"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_trainover_xing_rl_1"
+                style="@style/layout_grade_rela"
+                android:layout_below="@+id/layout_trainover_tv_2">
+
+                <TextView
+                    style="@style/layout_grade_rela_tv"
+                    android:text="本次自我打分"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/layout_trainover_zwdf"
+                    style="@style/layout_grade_rela_ll">
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_zwdf_xing_1"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_zwdf_xing_2"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_zwdf_xing_3"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_zwdf_xing_4"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_zwdf_xing_5"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_trainover_xing_rl_2"
+                style="@style/layout_grade_rela"
+                android:layout_below="@+id/layout_trainover_xing_rl_1">
+
+                <TextView
+                    style="@style/layout_grade_rela_tv"
+                    android:text="完成情况"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/layout_trainover_wcqk"
+                    style="@style/layout_grade_rela_ll">
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_wcqk_xing_1"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_wcqk_xing_2"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_wcqk_xing_3"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_wcqk_xing_4"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_wcqk_xing_5"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_trainover_xing_rl_3"
+                style="@style/layout_grade_rela"
+                android:layout_below="@+id/layout_trainover_xing_rl_2">
+
+                <TextView
+                    style="@style/layout_grade_rela_tv"
+                    android:text="技术成长"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/layout_trainover_jscz"
+                    style="@style/layout_grade_rela_ll">
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_jscz_xing_1"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_jscz_xing_2"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_jscz_xing_3"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_jscz_xing_4"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+
+                    <ImageView
+                        android:id="@+id/layout_trainover_jscz_xing_5"
+                        android:layout_width="@dimen/layout_xingxing"
+                        android:layout_height="@dimen/layout_xingxing"
+                        android:layout_marginLeft="@dimen/layout_xingxing_margin"
+                        android:layout_marginRight="@dimen/layout_xingxing_margin"
+                        android:background="@mipmap/rating"
+                        android:onClick="onClick" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_trainover_shared_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_trainover_xing_rl_3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/layout_trainover_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_trainover_bt" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/layout_trainover_tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_trainover_shared_rl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_trainover_close"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:src="@drawable/icon_train_close" />
+    </RelativeLayout>
+</RelativeLayout>

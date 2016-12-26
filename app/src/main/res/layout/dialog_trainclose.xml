@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_app_cartoon_item"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon_train_out" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="今天不练，明天即使练两遍也不一定跟得上哦，你真的要退出吗？"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/dialog_trainpause_train_1"
+        android:layout_width="165dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon_train_agin" />
+
+    <ImageView
+        android:id="@+id/dialog_trainpause_train_2"
+        android:layout_width="125dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/bg_train_close" />
+
+</LinearLayout>

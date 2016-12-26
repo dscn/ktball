@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--进度条默认提示-->
+    <string name="loading">查信用|上蜜蜂</string>
+    <!--<string name="loading">Loading...</string>-->
+
+    <!-- 注册界面用户名hint-->
+    <string name="hint_loginname">手机号码/邮箱</string>
+    <!-- 注册界面密码hint-->
+    <string name="hint_loginpwd">登录密码</string>
+
+    <string name="refreshing">更新中……</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="pull_to_refresh">下拉更新……</string>
+    <string name="release_to_refresh">松手更新……</string>
+</resources>

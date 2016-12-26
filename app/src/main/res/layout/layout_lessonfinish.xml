@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="161dp"
+        android:layout_height="237dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_lessonfinish"/>
+
+    <Button
+        android:id="@+id/layout_lessonfinish_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="完  成"
+        android:background="@color/gold"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

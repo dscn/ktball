@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/layout_title_tv"
+            style="@style/toolbar_title_text"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_home_logo"/>
+
+        <TextView
+            android:id="@+id/layout_title_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="@dimen/frame_padding_widget_default"
+            android:layout_marginRight="@dimen/frame_margin_widget_default"
+            android:visibility="gone"
+            android:text="定位中"/>
+
+        <ImageView
+            android:id="@+id/layout_title_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/icon_shared"/>
+
+    </android.support.v7.widget.Toolbar>
+</FrameLayout>

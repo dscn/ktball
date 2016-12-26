@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/class_titile"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:textSize="12dp"
+            tools:text="第一課" />
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/gold"
+            android:textSize="10dp"
+            tools:text="09-10" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gold"
+            android:textSize="10dp"
+            tools:text="16:30-17:15" />
+    </RelativeLayout>
+
+    <com.frame.app.view.MyListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:listSelector="@null"
+        android:background="@drawable/class_list_shape"
+        android:layout_height="wrap_content">
+
+    </com.frame.app.view.MyListView>
+</LinearLayout>

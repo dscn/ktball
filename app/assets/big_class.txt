@@ -1,0 +1,97 @@
+{
+  "class": [
+    {
+      "class_name": "幼儿园大课间(第一套)",
+      "video_url": "http://player.youku.com/embed/XMTc0MzkyODI4OA==",
+      "list": [
+        {
+          "id": 4,
+          "name": "脚底踩球",
+          "avatar": "/uploads/app_cartoon/avatar/4/_4.png"
+        },
+        {
+          "id": 1,
+          "name": "双脚靠球",
+          "avatar": "/uploads/app_cartoon/avatar/1/123_e.png"
+        },
+        {
+          "id": 2,
+          "name": "脚内侧踢球",
+          "avatar": "/uploads/app_cartoon/avatar/21/21.png"
+        }
+      ]
+    },
+    {
+      "class_name": "小学一年级大课间(第二套)",
+      "video_url": "http://player.youku.com/embed/XMTc0MzkxMjAzNg==",
+      "list": [
+        {
+          "id": 4,
+          "name": "脚底踩球",
+          "avatar": "/uploads/app_cartoon/avatar/4/_4.png"
+        },
+        {
+          "id": 14,
+          "name": "踩球变向",
+          "avatar": "/uploads/app_cartoon/avatar/14/13.png"
+        },
+        {
+          "id": 13,
+          "name": "内跨外拨",
+          "avatar": "/uploads/app_cartoon/avatar/13/12.png"
+        },
+        {
+          "id": 6,
+          "name": "外跨外拨",
+          "avatar": "/uploads/app_cartoon/avatar/6/_6.png"
+        },
+        {
+          "id": 28,
+          "name": "踩球过人",
+          "avatar": "/uploads/app_cartoon/avatar/28/28.png"
+        },
+        {
+          "id": 23,
+          "name": "外脚背停球过人",
+          "avatar": "/uploads/app_cartoon/avatar/23/23.png"
+        }
+      ]
+    },
+    {
+      "class_name": "小学二年级大课间(第三套)",
+      "video_url": "http://player.youku.com/embed/XMTY4NjYwMjEwNA==",
+      "list": [
+        {
+          "id": 1,
+          "name": "双脚靠球",
+          "avatar": "/uploads/app_cartoon/avatar/1/123_e.png"
+        },
+        {
+          "id": 18,
+          "name": "靠球过人",
+          "avatar": "/uploads/app_cartoon/avatar/18/17.png"
+        },
+        {
+          "id": 20,
+          "name": "脚内侧扣球",
+          "avatar": "/uploads/app_cartoon/avatar/20/20.png"
+        },
+        {
+          "id": 17,
+          "name": "脚内侧身后扣球",
+          "avatar": "/uploads/app_cartoon/avatar/17/16.png"
+        },
+        {
+          "id": 7,
+          "name": "内晃外拨",
+          "avatar": "/uploads/app_cartoon/avatar/7/_7.png"
+        },
+        {
+          "id": 25,
+          "name": "假踢过人",
+          "avatar": "/uploads/app_cartoon/avatar/25/25.png"
+        }
+      ]
+    }
+  ]
+}

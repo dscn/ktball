@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/judge_background"
+    tools:context=".Refactor.ui.Avtivity.CreateClassActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/relativeLayout18">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:onClick="doFinsh"
+            android:layout_marginLeft="16dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="17dp"
+                android:id="@+id/imageView87"
+                android:src="@drawable/icon_back"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/toolbar_title_text"
+            android:id="@+id/textView105"
+            android:text="添加班级"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageView88"
+            android:src="@drawable/dui"
+            android:onClick="doCreateClass"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:id="@+id/textView124"
+        android:layout_below="@+id/relativeLayout18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/textView124"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout25">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="选择年级"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:id="@+id/textView125"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView94"
+            android:src="@drawable/guangbiao"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView125"
+            android:layout_toEndOf="@+id/textView125" />
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:onClick="doSeleteGrade"
+            android:layout_alignTop="@+id/imageView94"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView96"
+                android:src="@drawable/xiala"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text=""
+            android:gravity="center_vertical"
+            android:textSize="17dp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/textView129"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView94"
+            android:layout_toEndOf="@+id/imageView94" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:id="@+id/textView126"
+        android:layout_below="@+id/relativeLayout25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_below="@+id/textView126"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout26">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="请输入班级"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"
+            android:id="@+id/textView127"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView95"
+            android:src="@drawable/guangbiao"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView127"
+            android:layout_toEndOf="@+id/textView127" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/editText5"
+            android:textSize="17dp"
+            android:textColor="@android:color/white"
+            android:inputType="number"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/no_border"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView95"
+            android:layout_toEndOf="@+id/imageView95" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:id="@+id/textView128"
+        android:layout_below="@+id/relativeLayout26"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/spingarr"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

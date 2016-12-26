@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:text="New Text"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <com.frame.app.view.NumberProgressBar.NumberProgressBar
+        android:id="@+id/progressBar20"
+        style="@style/NumberProgressBar_Default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView71"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"
+        android:padding="20dp"
+        android:visibility="gone"
+        custom:progress_current="0" />
+</RelativeLayout>

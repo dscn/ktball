@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/head_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:id="@+id/refresh_rl_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/pull_icon"
+                android:layout_width="71dp"
+                android:layout_height="65dp"
+                android:background="@mipmap/custom_pull_down" />
+
+            <ImageView
+                android:id="@+id/refreshing_icon"
+                android:layout_width="72.9dp"
+                android:layout_height="66.6dp"
+                android:background="@drawable/pull_down_drawable"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/refresh_rl_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/refresh_rl_1"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/rtzgqs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="让投资更轻松"
+                android:textColor="#595757"
+                android:textSize="10sp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:id="@+id/state_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pull_to_refresh"
+                android:textColor="#666468"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/state_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="时间"
+                android:textColor="#74727a"
+                android:textSize="7sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+       <!--  <ImageView
+            android:id="@+id/state_iv"
+            android:layout_width="71dp"
+            android:layout_height="65dp"
+            android:layout_toLeftOf="@id/refresh_rl_2"
+            android:visibility="gone" /> -->
+    </RelativeLayout>
+
+</RelativeLayout>

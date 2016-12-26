@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            tools:text="脚底踩球" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:layout_width="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_menu" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_width="wrap_content"
+                android:text="动作要领"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:background="@color/black"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_yaol"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:text="训练说明"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <View
+                android:background="@color/black"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent">
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_shuom"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

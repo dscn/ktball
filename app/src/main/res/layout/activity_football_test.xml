@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relative_bootom"
+        android:listSelector="@null">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/relative_bootom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/tv_no_select"
+            android:gravity="center"
+            android:text="撤销"
+            android:textColor="@color/gold" />
+
+        <LinearLayout
+            android:id="@+id/linear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_cancle"
+            android:background="@mipmap/tv_no_select"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/no_select_logo" />
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="全选"
+                android:textColor="@color/gold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/tv_commit"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</RelativeLayout>

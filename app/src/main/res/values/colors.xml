@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorYellow">#CDA236</color>
+    <color name="colorHui">#949393</color>
+    <color name="colorQianHui">#DDDDDD</color>
+    <color name="colorBank">#000000</color>
+    <color name="colorOrangeFont">#FEEA3B</color>
+    <color name="white">#ffffffff</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="blue">#0033ff</color>
+    <color name="black">#000000</color>
+    <color name="transBlack">#66000000</color>
+    <color name="actionBar">#CCCCCC</color>
+    <color name="login_bg">#F0F0F2</color>
+    <color name="footTextColor">#666666</color>
+    <color name="mytext">#999999</color>
+    <color name="footTextColorSelect">#ee3017</color>
+    <color name="myOder">#ff5200</color>
+    <color name="myOderItem">#ee7624</color>
+    <color name="myOderItemBG">#f2f4f6</color>
+    <color name="myOder$">#d8292f</color>
+    <color name="nomel">#ededed</color>
+    <color name="goumai">#ff8400</color>
+    <color name="goumai_press">#dc790e</color>
+    <color name="baojia">#ee3017</color>
+    <color name="baojia_press">#ce2f1b</color>
+    <color name="transparent_background">#dd000000</color>
+    <color name="bg_default">#343536</color>
+    <color name="train_start_text_color">#888888</color>
+
+    <color name="head_color">#836FFF</color>
+    <color name="information_title_color">#666666</color>
+    <color name="list_bg_color">#FFF4F4F4</color>
+    <color name="list_focus_color">#bdbdbd</color>
+
+    <drawable name="f4f4f4">#f4f4f4</drawable>
+    <drawable name="camera_back_press">#1b1b1b</drawable>
+    <drawable name="camera_back_default">#2f2f2f</drawable>
+    <drawable name="checkbox_default">#ff8400</drawable>
+    <drawable name="checkbox_click_true">#FEEA3B</drawable>
+    <drawable name="checkbox_click_false">#FF4081</drawable>
+
+    <color name="main_bottom_text_color">#eac350</color>
+    <color name="default_bg_color">#262626</color>
+</resources>

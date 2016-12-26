@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/judge_background"
+    tools:context=".Refactor.ui.Avtivity.UserInfoActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout18"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/toolbar_bg_color_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:onClick="doFinsh">
+
+            <ImageView
+                android:id="@+id/imageView87"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView105"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="学生信息"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView88"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:onClick="doCommit"
+            android:src="@drawable/dui" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout19"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout18"
+        android:onClick="doPhoto"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView91"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/gengdou" />
+
+        <com.newer.kt.Refactor.view.CircleImageView
+            android:id="@+id/imageView92"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView91"
+            android:layout_toStartOf="@+id/imageView91" />
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView114"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/relativeLayout18"-->
+        <!--android:background="@android:color/white" />-->
+
+    <TextView
+        android:id="@+id/textView115"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout19"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout20"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView115"
+        android:paddingLeft="16dp"
+        android:onClick="doName"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="姓名"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView93"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/gengdou" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView93"
+            android:layout_toStartOf="@+id/imageView93"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView118"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout20"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout21"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView118"
+        android:paddingLeft="16dp"
+        android:onClick="doSex"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView1166"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="性别"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView933"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/gengdou" />
+
+        <TextView
+            android:id="@+id/textView1177"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView933"
+            android:layout_toStartOf="@+id/imageView933"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout21"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout22"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView119"
+        android:onClick="doBirthday"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView11666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="生日"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView9333"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/gengdou" />
+
+        <TextView
+            android:id="@+id/textView11777"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView9333"
+            android:layout_toStartOf="@+id/imageView9333"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView120"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout22"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout23"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView120"
+        android:paddingLeft="16dp"
+        android:onClick="doGrader"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView116666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="班级"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView93333"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/gengdou" />
+
+        <TextView
+            android:id="@+id/textView117777"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView93333"
+            android:layout_toStartOf="@+id/imageView93333"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout23"
+        android:background="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout24"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView121"
+        android:paddingLeft="16dp"
+        android:onClick="doPhone"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/textView1166666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="联系方式"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView933333"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/gengdou" />
+
+        <TextView
+            android:id="@+id/textView1177777"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView933333"
+            android:layout_toStartOf="@+id/imageView933333"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView122"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout24"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/delete_user_buttom"
+        android:gravity="center"
+        android:onClick="doDelete"
+        android:text="删除玩家"
+        android:textColor="@android:color/black"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout888"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#70000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView777"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="doTakePhoto"
+                android:text="拍照"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView788"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="doSeletePhoto"
+                android:text="从相册中选择"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView104"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView799"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="doCanal"
+                android:text="取消"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_studentsevaluation_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#464646"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_studentsevaluation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#81807e"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/layout_studengt_not"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/layout_studengt_not_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="未测评"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/layout_studengt_not_tab"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/main_bottom_text_color" />
+        </LinearLayout>
+
+
+        <View style="@style/line_v" />
+
+        <LinearLayout
+            android:id="@+id/layout_studengt_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/layout_studengt_yes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="已测评"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/layout_studengt_yes_tab"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/main_bottom_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/layout_studentsevaluation_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_studentsevaluation_bottom"
+        android:layout_below="@+id/layout_studentsevaluation_title"
+        android:layout_weight="1"
+        />
+</RelativeLayout>

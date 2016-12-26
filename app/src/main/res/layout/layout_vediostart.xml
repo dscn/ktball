@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/layout_vediostart_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/layout_vediostart_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/layout_vediostart_currentNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:text="0"/>
+
+                <TextView
+                    android:id="@+id/layout_vediostart_totolNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_vediostart_progressBar"
+                android:background="@drawable/progress_bg"
+                android:indeterminate="false"
+                android:indeterminateOnly="false"
+                android:minHeight="20dp"
+                android:maxHeight="20dp"
+                android:padding="5dp"
+                android:progress="0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15sp"
+                android:layout_marginTop="30dp"
+                android:progressDrawable="@drawable/progress_horizontal1"
+                android:layout_marginBottom="6dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:id="@+id/layout_vediostart_puse"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_train_vedio_start"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layout_vediostart_cuntdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="100sp"
+        android:textColor="@color/yellow"
+        android:text="3"/>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/layout_vediostart_close"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_train_close"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"/>
+    </RelativeLayout>
+
+</FrameLayout>

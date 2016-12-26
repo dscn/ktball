@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView32"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年龄"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginRight="12dp"
+        android:id="@+id/textView13"
+        android:layout_toLeftOf="@+id/imageView32"
+        android:layout_centerVertical="true"/>
+
+    <com.newer.kt.myClass.MyCircleImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageView29"
+        android:src="@drawable/default_head"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="11dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x17"
+        android:layout_toRightOf="@+id/imageView29"
+        android:id="@+id/textView9"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"/>
+
+</RelativeLayout>

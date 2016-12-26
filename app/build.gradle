@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.bugtags.library.plugin'
+
+bugtags {
+    //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考插件详细使用说明
+    appKey "89b17639fb117bd874c6a62255b6b36f"  //这里是你的 appKey
+    appSecret "APP_SECRET"    //这里是你的 appSecret，管理员在设置页可以查看
+    mappingUploadEnabled true
+
+    //网络跟踪功能配置(企业版)
+    trackingNetworkEnabled true
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.newer.kt"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 6
+        versionName "3.3.0"
+        multiDexEnabled true
+
+
+        sourceSets {
+            main {
+                assets.srcDirs = ['assets']
+            }
+        }
+
+        ndk{
+            abiFilters "armeabi","armeabi-v7a","x86","mips"
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        incremental true
+    }
+    signingConfigs {
+        simple {
+            storeFile file("key/KTSchool.jks")
+            storePassword "123456"
+            keyAlias "ktdebug"
+            keyPassword "123456"
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.simple
+        }
+
+
+        debug {
+            signingConfig signingConfigs.simple
+        }
+
+    }
+
+
+    sourceSets {
+        main {
+            aidl.srcDirs = ['src/main/java']
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/maven/com.nineoldandroids/library/pom.xml'
+        exclude 'META-INF/maven/com.nineoldandroids/library/pom.properties'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'lib/armeabi-v7a/libwebpbackport.so'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:multidex:1.0.0'
+    compile files('libs/volley.jar')
+    compile files('libs/glide-3.7.0.jar')
+    compile project(':Frame')
+    compile files('libs/youkuuploaderlib.jar')
+    compile files('libs/httplib.jar')
+    compile 'org.xutils:xutils:3.3.36'
+    compile project(':MPChartLib')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+}
